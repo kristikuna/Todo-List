@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="App" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div ng-controller="FormController as form" class="container">
+      <h1>TODO List</h1>
+
+      <p>A place to store the things you have to do!</p>
+
+      <form ng-submit="form.addingItem(form.item);">
+        <!-- input filters added items -->
+        <input type="text" placeholder="Filter your to dos" ng-model="itemsAdded">
+
+        <ol>
+          <li ng-repeat="add in form.todoList | filter: itemsAdded | orderBy track by $index">{{ add.item }}<button ng-click="form.removeInfo($index);" type="button" name="remove"><i class="material-icons">close</i></button></li>
+        </ol>
+
+        <!-- input to add items to list -->
+        <input type="text" placeholder="Add your to do" ng-model="form.item">
+
+        <button class="addButton">Add</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script type="text/javascript" src="module.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+  </body>
+</html>
