@@ -28,10 +28,22 @@ input {
   border-radius: 5px;
   font-size: 15px;
   border: 1px solid #CCC;
+  color: #bbb;
+}
+
+li:hover {
+  background-color: #eee;
 }
 
 .material-icons:hover {
   cursor: pointer;
+  background-color: #eee;
+  color: #ff0000;
+
+}
+
+li button:hover{
+  background-color: #eee;
 }
 
 .addButton {

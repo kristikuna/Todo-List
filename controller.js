@@ -6,6 +6,7 @@
         if(item){
           vm.todoList.push({ item: item });
           vm.item = "";
+          console.log(item);
         }
     };
     vm.removeInfo = function (index){
@@ -13,7 +14,6 @@
       vm.todoList.splice(index, 1);
     }
   }
-
 
 
   angular
