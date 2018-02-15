@@ -18,6 +18,6 @@
         }
     }
     angular
-        .module("app")
+        .module("App")
         .directive("hoverState", hoverState)
 }());

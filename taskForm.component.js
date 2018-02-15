@@ -9,7 +9,7 @@
         if (item) {
           vm.todoList.push({ item: item });
           vm.item = "";
-          console.log(item);
+          console.log(todoList);
         }
       }
     }
