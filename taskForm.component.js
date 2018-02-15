@@ -3,13 +3,13 @@
 
     templateUrl: "partials/taskForm.html",
     controller: function() {
-      var vm = this;
-      vm.todoList = [];
-      vm.addingItem = function(item) {
+      var $ctrl = this;
+      $ctrl.todoList = [];
+      $ctrl.addingItem = function(item) {
         if (item) {
-          vm.todoList.push({ item: item });
-          vm.item = "";
-          console.log(todoList);
+          $ctrl.todoList.push({ item: item });
+          $ctrl.item = "";
+          console.log(item);
         }
       }
     }

@@ -4,5 +4,5 @@
 <!-- <task-list item="$ctrl.taskList"></task-list> -->
 <ol>
   <li ng-repeat="item in $ctrl.todoList | filter: itemsAdded | orderBy track by $index" hover-state>
-    {{ item.item }}<button ng-click="$ctrl.removeInfo($index);" type="button" name="remove"><i class="material-icons">close</i></button></li>
+    {{ item.item }} <button ng-click="$ctrl.removeInfo($index);" type="button" name="remove"><i class="material-icons">close</i></button></li>
 </ol>

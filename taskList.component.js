@@ -1,14 +1,14 @@
 (function() {
   var taskList = {
     bindings: {
-     todoList: "<"
+     todoList : "<"
    },
 
     templateUrl: "partials/taskList.html",
     controller: function() {
-      var vm = this;
-      vm.removeInfo = function(index) {
-        vm.todoList.splice(index, 1);
+      var $ctrl = this;
+      $ctrl.removeInfo = function(index) {
+        $ctrl.todoList.splice(index, 1);
       }
     }
   };

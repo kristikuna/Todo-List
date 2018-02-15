@@ -3,15 +3,15 @@
         return {
             link: function($scope, $element, $attrs) {
                 $element.on("mouseover", function() {
-                    $element.css('border','1px solid black')
+                    $element.css('background-color', '#eee');
+                    $element.css('border-radius', '10px');
+                    $element.children().css('color', '#ff0000');
 
                 });
-                $element.on("mouseleave", function() {
+                $element.on("mouseout", function() {
+                    $element.css('background-color', '#fff');
                     $element.css('border','none')
-
-                });
-                $element.on("click", function() {
-                    $element.css('color', '#ff0000')
+                    $element.children().css('color', 'black');
 
                 });
             }

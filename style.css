@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-  background: #fff;
-  width: 60%;
+  background-color: #fff;
+  width: 75%;
   min-height: 250px;
   margin: 100px auto;
   padding: 20px;
@@ -28,26 +28,22 @@ input {
   border-radius: 5px;
   font-size: 15px;
   border: 1px solid #CCC;
-  color: #bbb;
-}
-
-li:hover {
-  background-color: #eee;
+  color: black;
 }
 
 .material-icons:hover {
   cursor: pointer;
   background-color: #eee;
   color: #ff0000;
-
 }
 
-li button:hover{
-  background-color: #eee;
+.addButton:hover {
+  opacity: 1;
 }
 
 .addButton {
-  background-color: #ff69b4;
+  opacity: 0.5;
+  background-color: #ff1493;
   color: #eee;
   font-size: 15px;
   padding: 10px;
@@ -59,11 +55,12 @@ li button:hover{
 li button {
   float: right;
   border: none;
-  background-color: #fff;
+  height: 20px;
+  background-color: inherit;
 }
 
 li {
-  font-size: 15px;
+  font-size: 20px;
   padding: 6px;
   width: 90%;
 }
@@ -71,7 +68,7 @@ li {
 @media screen and (min-width: 768px) {
 
   .container {
-    width: 25%;
+    width: 30%;
   }
 
   .addButton {
