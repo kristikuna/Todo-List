@@ -19,5 +19,5 @@
     }
     angular
         .module("App")
-        .directive("hoverState", hoverState)
+        .directive("hoverState", hoverState);
 }());
