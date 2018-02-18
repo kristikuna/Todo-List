@@ -2,8 +2,7 @@
 <!-- input filters added items -->
 <input type="text" placeholder="Filter your to dos" ng-model="itemsAdded">
 
-<!-- <task-list item="$ctrl.taskList"></task-list> -->
 <ol>
-  <li ng-repeat="item in $ctrl.todoList | filter: itemsAdded | orderBy track by $index" hover-state>
-    {{ item.item }} <button ng-click="$ctrl.removeInfo($index);" type="button" name="remove"><i class="material-icons">close</i></button></li>
+  <li ng-repeat="item in $ctrl.taskToDisplay | filter: itemsAdded track by $index" hover-state>
+    {{ item }} <button ng-click="$ctrl.rmInfo($index);" type="button" name="remove"><i class="material-icons">close</i></button></li>
 </ol>

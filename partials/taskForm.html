@@ -5,7 +5,7 @@
    <task-list todo-list="$ctrl.todoList"></task-list>
     <form ng-submit="$ctrl.addingItem($ctrl.item);">
     <!-- input to add items to list -->
-    <input type="text" placeholder="Add your to do" ng-model="$ctrl.item">
+    <input id="addInput" type="text" placeholder="Add your to do" ng-model="$ctrl.item">
 
     <button class="addButton">Add</button>
   </form>

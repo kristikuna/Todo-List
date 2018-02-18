@@ -4,10 +4,10 @@
     templateUrl: "partials/taskForm.html",
 
     controller: function(TaskService) {
-      var $ctrl = this;
-      $ctrl.todoList = function(item){
-          TaskService.getData(item);
-
+      var vm = this;
+      vm.addingItem = function(item) {
+        TaskService.getData(item);
+        // console.log(item);
       };
     }
   };

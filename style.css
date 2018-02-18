@@ -41,6 +41,10 @@ input {
   opacity: 1;
 }
 
+.addButton:focus, input:focus, .material-icons:focus{
+  outline: 0;
+}
+
 .addButton {
   opacity: 0.5;
   background-color: #ff1493;

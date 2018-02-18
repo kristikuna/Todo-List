@@ -1,20 +1,26 @@
 (function() {
-  function TaskService () {
+  function TaskService() {
     var todoList = [];
     return {
       getData: getData,
-      setData: setData
+      setData: setData,
+      removeInfo: removeInfo
     }
 
-    function getData() {
+    function getData(item) {
+      todoList.push(item);
+      document.getElementById('addInput').value = "";
+    }
+
+    function setData() {
       return todoList;
     }
 
-    function setData (item){
-      todoList = item;
+    function removeInfo(index) {
+      todoList.splice(index, 1);
+      console.log("clicked");
     }
-
-}
+  }
   angular
     .module("App")
     .factory("TaskService", TaskService);
