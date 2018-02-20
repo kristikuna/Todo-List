@@ -2,17 +2,16 @@
   function TaskService() {
     var todoList = [];
     return {
+      addData: addData,
       getData: getData,
-      setData: setData,
       removeInfo: removeInfo
     }
 
-    function getData(item) {
+    function addData(item) {
       todoList.push(item);
-      document.getElementById('addInput').value = "";
     }
 
-    function setData() {
+    function getData() {
       return todoList;
     }
 

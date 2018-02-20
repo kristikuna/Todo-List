@@ -6,7 +6,6 @@
                     $element.css('background-color', '#eee');
                     $element.css('border-radius', '10px');
                     $element.children().css('color', '#ff0000');
-
                 });
                 $element.on("mouseout", function() {
                     $element.css('background-color', '#fff');

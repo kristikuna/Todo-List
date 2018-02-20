@@ -3,5 +3,5 @@
 
 
   angular
-    .module("App", []);
+    .module("App", ["ngRoute"]);
 })();

@@ -6,8 +6,10 @@
     controller: function(TaskService) {
       var vm = this;
       vm.addingItem = function(item) {
-        TaskService.getData(item);
-        // console.log(item);
+        if (item) {
+          TaskService.addData(item);
+          vm.item = "";
+        }
       };
     }
   };
